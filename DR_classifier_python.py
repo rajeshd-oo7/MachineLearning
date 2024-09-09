@@ -45,23 +45,7 @@ def compute_discrepancy_fill_distance(point_set, full_point_set):
     discrepancy_measure = np.sqrt(np.sum(adist)) / len(adist)
     #print(discrepancy_measure.shape)
     return discrepancy_measure
-# =============================================================================
-# def compute_discrepancy_fill_distance(point_set, full_point_set):
-#     num_data_points = point_set.shape[0]
-#     dist_matrix = np.zeros((full_point_set.shape[0], num_data_points))
-# 
-#     for ak in range(num_data_points):
-#         P = full_point_set - point_set[ak, :]
-#         dist_array = np.sum(P * P, axis=1)
-#         dist_matrix[:, ak] = dist_array
-# 
-#     dist_matrix[dist_matrix == 0] = 10**-6
-#     adist = np.min(dist_matrix, axis=1)
-#     
-#     discrepancy_measure = np.sqrt(np.sum(adist)) / len(adist)
-#     return discrepancy_measure
-# =============================================================================
-#=============================================================================
+
 def cartesian_product(arrays):
     la = len(arrays)
     dtype = np.find_common_type([a.dtype for a in arrays], [])
