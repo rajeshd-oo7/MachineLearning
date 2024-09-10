@@ -3,7 +3,7 @@ The classifier we build in this project is to classify color fundus images to de
 Download the dataset from the given URL and place it in the data folder and run the 'data_prep_DiabeticRetinopathy.py' script (update the data path in the script). The script extracts the image data and perfoms nonlinear dimensionality reduction using UMAP.
 It reduces 244x244x3 =  1,50,528 dimensions to 4 dimensions. The final feature vectors are 4 dimensional. The feture vector and data label files are generated.  Then run the 'DR_classifier_python.py' classifier script.
 
-Note: The classifier iterates using point selection, instead of drawing random points. For low accuracy problems and other purposes one should modify code to not use point selection and just draw random points without any iterations.
+Note: The classifier is trained and run iteratively using point selection, instead of drawing random points. For low accuracy problems and other purposes one should modify code to not use point selection and just draw random points without any iterations.
 
 References
 
