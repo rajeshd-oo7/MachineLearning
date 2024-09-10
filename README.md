@@ -5,8 +5,10 @@ It reduces 244x244x3 =  1,50,528 dimensions to 4 dimensions. The final feature v
 
 Note: The classifier iterates using point selection, instead of drawing random points. For low accuracy problems and other purposes one should modify code to not use point selection and just draw random points without any iterations.
 
-Dachiraju, R., 2020. Approximation of a Multivariate Function of Bounded Variation from its Scattered Data. arXiv preprint arXiv:2011.11258.
+References
 
-Testing the manifold hypothesis by Charles Fefferman, Sanjoy Mitter and Hariharan Narayanan J. Amer. Math. Soc. 29 (2016), 983-1049 DOI: https://doi.org/10.1090/jams/852.
+1. Dachiraju, R., 2020. Approximation of a Multivariate Function of Bounded Variation from its Scattered Data. arXiv preprint arXiv:2011.11258.
 
-McInnes, L., Healy, J. and Melville, J., 2018. Umap: Uniform manifold approximation and projection for dimension reduction. arXiv preprint arXiv:1802.03426.
+2. Testing the manifold hypothesis by Charles Fefferman, Sanjoy Mitter and Hariharan Narayanan J. Amer. Math. Soc. 29 (2016), 983-1049 DOI: https://doi.org/10.1090/jams/852.
+
+3. McInnes, L., Healy, J. and Melville, J., 2018. Umap: Uniform manifold approximation and projection for dimension reduction. arXiv preprint arXiv:1802.03426.
