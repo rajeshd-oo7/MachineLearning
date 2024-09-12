@@ -14,3 +14,5 @@ References
 3. McInnes, L., Healy, J. and Melville, J., 2018. Umap: Uniform manifold approximation and projection for dimension reduction. arXiv preprint arXiv:1802.03426.
 
 4. The code cartesian product is due to this post at this url: https://stackoverflow.com/questions/11144513/cartesian-product-of-x-and-y-array-points-into-single-array-of-2d-points/49445693#49445693
+
+5. The function/code Computational fill distance is based on the post here : https://mathoverflow.net/q/390461/134538
