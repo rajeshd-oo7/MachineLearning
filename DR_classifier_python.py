@@ -120,9 +120,11 @@ def refresh_train_v_4d_ncond_sens(train_pca_df_vectors, data_label_train, pretes
 
     n = train_pca_df_vectors.shape[0]
     lambda_ = Eta_1 ** (-alpha)
-    lambda_ *= 10 ** 0
+    lambda_scale_factor = 1
+    lambda_ *= lambda_scale_factor
     omega = (ld * Eta_1 ** (-beta)) / 1
-    omega = np.round(omega / 15).astype(int) 
+    omega_scale_factor = 15
+    omega = np.round(omega / omega_scale_factor).astype(int) 
     #print(omega)
     K = cartesian_product([np.arange(-omega[0], omega[0] + 1), np.arange(-omega[1], omega[1] + 1),np.arange(-omega[2], omega[2] + 1), np.arange(-omega[3], omega[3] + 1)])
 
