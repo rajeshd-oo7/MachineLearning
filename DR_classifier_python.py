@@ -106,16 +106,16 @@ def refresh_train_v_4d_ncond_sens(train_pca_df_vectors, data_label_train, pretes
     mm = train_pca_df_vectors.shape[1]
     k = mm // 2 + 1 if mm % 2 == 0 else round(mm / 2) + 1
 
-    alpha_min = 1 / (2 * k - 1)
-    alpha_max = 1 / (2 * k - 3)
+    
+    alpha_max = 1 / (2 * k - 1)
 
-    alpha_sens = 0.2
-    alpha = ((1 - alpha_sens) * alpha_min + (alpha_sens) * alpha_max) / 1
+    alpha_sens = 0.9
+    alpha = alpha_sens * alpha_max
 
     beta_min = alpha * (2 * k - 1)
-    beta_max = 1 + 2 * alpha
+    beta_max = 1 - 2 * alpha
 
-    bsens = 0.2
+    bsens = 0.8
     beta = ((1 - bsens) * beta_min + (bsens) * beta_max) / 1
 
     n = train_pca_df_vectors.shape[0]
