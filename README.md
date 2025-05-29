@@ -10,7 +10,7 @@ Note: The classifier is trained and run iteratively using point selection, inste
 
 References
 
-1. Dachiraju, R., 2025. Binary Regression for BV Class Conditional Probability. preprint DOI: 10.13140/RG.2.2.36420.54408. (https://www.researchgate.net/publication/390440104_Binary_Regression_for_BV_Class_Conditional_Probability)
+1. Dachiraju, R., 2025. Binary Regression for BV Class Conditional Probability. preprint DOI: 10.13140/RG.2.2.36420.54408. (http://dx.doi.org/10.13140/RG.2.2.20929.26727)
 
 2. Testing the manifold hypothesis by Charles Fefferman, Sanjoy Mitter and Hariharan Narayanan J. Amer. Math. Soc. 29 (2016), 983-1049 DOI: https://doi.org/10.1090/jams/852.
 
