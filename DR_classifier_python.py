@@ -107,17 +107,18 @@ def refresh_train_v_4d_ncond_sens(train_pca_df_vectors, data_label_train, pretes
     k = mm // 2 + 1 if mm % 2 == 0 else round(mm / 2) + 1
 
     
-    alpha_max = 4 * k / ((4 * k - 1)*(2 * k - 1))
-
     alpha_sens = 0.9
-    alpha = alpha_sens * alpha_max
-
-    beta_min = max(2, alpha * (2 * k - 1))
-    beta_max = 4 * k / (2 * k - 1)
-
+    alpha_by_beta_sens = 0.7
     bsens = 0.8
+
+        
+    alpha_max = 2 / (2 * k - 1)    
+    alpha = alpha_sens * alpha_max
+    beta_min = max(2, (2 * k - 1) * alpha / alpha_by_beta_sens)
+    beta_max = 4 * k / (2 * k - 1)
     beta = ((1 - bsens) * beta_min + (bsens) * beta_max) / 1
 
+   
     n = train_pca_df_vectors.shape[0]
     lambda_ = Eta_1 ** (-alpha)
     lambda_scale_factor = 1
@@ -268,6 +269,7 @@ while len(rem_track_centroids) > 3:
 
 
     
+
 
 
 
